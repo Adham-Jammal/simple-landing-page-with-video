@@ -161,8 +161,8 @@ p.description {
   margin: 0 auto;
 }
 .mobile-video-area iframe {
-  width: 90%;
-  height: 300px;
+  width: 300px;
+  height: 168px;
 }
 .mobile-video-area .video-content {
   display: flex;
@@ -206,6 +206,10 @@ p.description {
 }
 /* Responsive */
 @media (max-width: 991px) {
+  body{
+    background-size: cover;
+    background-position: 75% bottom;
+  }
   .logos img {
     width: 125px;
   }
@@ -221,7 +225,10 @@ p.description {
     content: "";
   }
   p.description {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+  }
+  hr{
+    margin: 10px auto;
   }
   .buttons-area input.sign-up,
   .buttons-area a.whatsapp-contact {
@@ -232,6 +239,9 @@ p.description {
   }
   .video-area .video-content{
     display: none;
+  }
+  .video-content img{
+    width: 100px;
   }
   .mobile-video-area {
     display: block;
@@ -250,7 +260,9 @@ p.description {
   .buttons-area input {
     display: flex !important;
     margin-bottom: 10px;
-    width: 75%;
+    font-size: 1.4rem;
+    width: 250px;
+    height: 69px;
     margin: 5px auto;
     padding: 12px 30px !important;
   }
@@ -262,7 +274,7 @@ p.description {
     border-radius: 4px;
   }
   .video-area .list-content ul li {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: black;
   }
 }
